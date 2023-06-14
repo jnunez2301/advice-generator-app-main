@@ -7,7 +7,7 @@ dice.addEventListener('click', function handleClick() {
     .then(response => response.json())
     .then(data => {
       const advice = data.slip.advice;
-      randomQuote.innerHTML = advice;
+      randomQuote.innerHTML = '"' + advice + '"';
       const adviceId = data.slip.id;
       theNumbersMason.innerHTML = adviceId;
 
