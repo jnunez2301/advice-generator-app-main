@@ -1,6 +1,6 @@
 # Frontend Mentor - Advice generator app
 
-![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Advice generator app coding challenge](./screenshot.png)
 
 # Code that i consider important
 fetch('https:/any-webp.com/advice')
