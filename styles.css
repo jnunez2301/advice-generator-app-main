@@ -45,11 +45,12 @@ body{
     width: 60px;
     bottom: 30px;
     border-radius: 100%;
+    transition: all 250ms ease-in-out 50ms;
+    cursor: pointer;
 }
 .dice:hover {
-    cursor: pointer;
     box-shadow: 0 0 40px hsl(150, 100%, 66%);
-    animation: shake 0.5s;
+    
   }
 
   @keyframes shake {
