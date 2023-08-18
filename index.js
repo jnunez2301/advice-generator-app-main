@@ -5,8 +5,8 @@ let lastAdviceId = null;
 
 // Load a random quote when the page is loaded
 window.addEventListener('load', function () {
-  randomQuote.innerHTML = `Patience is key <br />♡( ◡‿◡ )`;
-  theNumbersMason.innerHTML = '000';
+  randomQuote.innerHTML = `Patience is key <br />⌛️ 🙇‍♂️`;
+  theNumbersMason.innerHTML = `Advice #000`;
 
   fetchAdvice();
 });
@@ -24,7 +24,7 @@ function fetchAdvice() {
         fetchAdvice();
       } else {
         randomQuote.innerHTML = '"' + advice + '"';
-        theNumbersMason.innerHTML = adviceId;
+        theNumbersMason.innerHTML = `Adivce #${adviceId}`;
         // Update the last advice ID
         lastAdviceId = adviceId;
       }
@@ -35,8 +35,8 @@ function fetchAdvice() {
 }
 
 dice.addEventListener('click', function handleClick() {
-  theNumbersMason.innerHTML = '000';
-  randomQuote.innerHTML = `Looking for more deep thoughts <br />(；⌣̀_⌣́)...`;
+  
+  randomQuote.innerHTML = `Looking for more deep thoughts <br />🤔`;
   theNumbersMason.innerHTML = ''; // Clear previous advice ID if any
 
   fetchAdvice();
